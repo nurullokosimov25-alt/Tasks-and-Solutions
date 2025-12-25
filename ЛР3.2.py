@@ -1,4 +1,6 @@
-﻿def table_mini(**kwargs):
+# “Динамический форматтер таблиц” (среднее) Функция: table(**kwargs) Функция должна:
+# • определить максимальную длину ключа • красиво вывести таблицу вида: parameter value -------- ----- version 1.0 debug True
+def table_mini(**kwargs):
     """Мини-версия форматтера."""
     if not kwargs:
         print("parameter value\n----- -----")
@@ -16,3 +18,4 @@
     # 3. Вывод данных
     for key, value in kwargs.items():
         print(f"{str(key).ljust(w)} {str(value)}")
+

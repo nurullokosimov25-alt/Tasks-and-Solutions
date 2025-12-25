@@ -1,3 +1,4 @@
+# Список (модель, скорость) — сортировка: • по скорости; • по модели. 
 data = [
     ("Model X", 250),
     ("Model S", 320),
@@ -6,5 +7,6 @@ data = [
 ]
 by_speed = sorted(data, key=lambda x: x[1])
 by_model = sorted(data, key=lambda x: x[0])
-print("�� ��������:", by_speed)
-print("�� ������:", by_model)
+print("По скорости:", by_speed)
+print("По модели:", by_model)
+

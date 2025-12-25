@@ -1,3 +1,5 @@
+# Найти расстояние между повторениями символа (позиции i и j) Например: s = "abcaab" повтор "a" на позициях 0, 3, 4 → расстояния: 3, 1
+# Использовать словарь-аккумулятор: last_seen[ch] = позиция 
 ﻿def distances_between_repeats(s):
     last_seen = {}      
     distances = []       
@@ -9,3 +11,4 @@
 
     return distances
 print(distances_between_repeats("abcaab"))
+

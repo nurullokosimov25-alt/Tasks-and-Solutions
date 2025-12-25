@@ -1,4 +1,5 @@
-﻿from collections import Counter
+# Анализ отзывов клиентов Использовать Counter, чтобы выделить: позитивные слова, негативные слова, слова-маркеры (частота выше среднего).
+from collections import Counter
 reviews = [
     "Очень быстро доставили, сервис отличный",
     "Плохо упаковано, товар поврежден",
@@ -16,4 +17,5 @@ marker_words = {w: c for w, c in counter.items() if c > avg}
 print("Позитивные слова:", positive_words)
 print("Негативные слова:", negative_words)
 print("Слова-маркеры:", marker_words)
+
 

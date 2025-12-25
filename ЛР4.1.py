@@ -1,4 +1,5 @@
-﻿import math
+#Создать систему логирования ошибок математических операций: деление, корень, логарифм. Писать ошибки в math.log
+import math
 import logging
 # Настройка логирования
 logging.basicConfig(
@@ -24,3 +25,4 @@ def safe_log(x):
     except Exception as e:
         logging.error(f"log | x={x} | {e}")
         return None
+

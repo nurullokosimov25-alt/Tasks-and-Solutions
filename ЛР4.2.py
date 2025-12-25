@@ -1,4 +1,5 @@
-﻿import shutil, zipfile, logging, os
+# Модуль backup.py: • копирование файла • создание архива (zip) • логирование операций
+import shutil, zipfile, logging, os
 
 logging.basicConfig(
     filename="backup.log",
@@ -20,3 +21,4 @@ def backup(file_name):
 
     except Exception as e:
         logging.error(e)
+
